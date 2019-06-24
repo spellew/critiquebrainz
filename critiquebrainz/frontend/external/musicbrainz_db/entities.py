@@ -43,6 +43,7 @@ def get_multiple_entities(entities):
     ))
     entities_info.update(fetch_multiple_recordings(
         recording_mbids,
+        includes=['artist'],
     ))
     entities_info.update(fetch_multiple_artists(
         artist_mbids,
